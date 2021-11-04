@@ -11,7 +11,7 @@ export const signUpRoute = {
         const { email, password } = req.body;
 
         // Make sure there's no existing user with that email - no verification yet
-        const db = getDbConnection('react-auth-db');
+        const db = getDbConnection('myFirstDatabase');
         const user = await db.collection('users').findOne({ email });
 
         if (user) {
