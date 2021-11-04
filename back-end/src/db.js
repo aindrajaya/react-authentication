@@ -9,7 +9,7 @@ export const initializeDbConnection = async () => {
     });
 }
 
-export const getDbConnection = dbName => {
-    const db = client.db(dbName);
+export const getDbConnection = myFirstDatabase => {
+    const db = client.db(myFirstDatabase);
     return db;
 }
